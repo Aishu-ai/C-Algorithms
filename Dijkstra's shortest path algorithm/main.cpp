@@ -39,8 +39,10 @@ class shortest_path{
 					if((*ptr).getIndex()==v)
 					break;
 					}
-					if(d<(*ptr).getValue()&&ptr!=closed.end())//if the cost obtained is less than the cost already present then replace the cost value
-					(*ptr).setValue(d);
+					if(d<(*ptr).getValue()&&ptr!=closed.end()){
+						(*ptr).setValue(d);//if the cost obtained is less than the cost already present then replace the cost value
+						(*ptr).setNeighbour(n.getNeighbour());
+					}	
 			}
 			else
 			{
