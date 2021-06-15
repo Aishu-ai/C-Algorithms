@@ -9,4 +9,5 @@
   <li> Continue this until we have all the nodes in one tree.</li>
   <li>If any node is left out that means the graph is not connected.</li>
   </ul>
+  <p>"main.cpp" implements the MST where as "main2.cpp" implements a MST where all edges belong to the same color-i.e edge specific or edge constrained MST.</p> 
   
