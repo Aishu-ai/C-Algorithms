@@ -1,5 +1,5 @@
 <h2>MINIMUM SPANNING TREE</h2>
-<h5>Also contains a MST finidng alogorithm as the previous one but uses the Kruskal algorithm.</h5>
+<h5>Contains a MST finding alogorithm as the previous one but uses the Kruskal algorithm.</h5>
 <p>The Kruskal algorithm involves the following steps:</p>
 <ul>
   <li>Create a set containing all edges in the graph and sort them in ascending order.</li>
