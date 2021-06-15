@@ -29,7 +29,7 @@ class graph{
 		}
 		for(int i=0;i<size;i++)
 		{
-			for(int j=0;j<size;j++)
+			for(int j=i;j<size;j++)
 			{
 				if(i==j)
 				gr[i][j]=false;
@@ -40,8 +40,9 @@ class graph{
 						gr[i][j]=true;
 						co[i][j]=rand()%3;
 						co[j][i]=co[i][j];
-						cost[i][j]=static_cast<int>(prob()*dist_range);
+						cost[i][j]=rand()%(dist_range-1)+1;
 						cost[j][i]=cost[i][j];
+						edges++;
 					}
 					else
 					gr[i][j]=false;
@@ -80,9 +81,11 @@ class graph{
 			indata>>num3;
 			indata>>num4;
 			gr[num1][num2]=true;
+			edges++;
 			cost[num1][num2]=num3;
 			co[num1][num2]=num4;
 		}
+		edges=edges/2;
 		indata.close();	
 	}	
 		
@@ -124,7 +127,4 @@ class graph{
 		cost[i][j]=cos;
 	}					
 		
-};							
-					
-		
-		
+};	
