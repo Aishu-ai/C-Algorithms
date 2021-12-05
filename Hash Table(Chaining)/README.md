@@ -4,7 +4,7 @@
 <h4>Hashing</h4>
 Hashtable is created using the username for hashing.
 <h4>Output:</h4> 
-<p>The program does the following</p></br>
+<p>The program does the following:</p>
 <ul>
 <li>It first prompts the user for their username: if the username is not found in hash table, then the program reports a "Name Not Found" error and terminates.</li>
 <li>If the username is found in the hash table, the user is prompted for their password. If the password is correct, it reports "Login successful", otherwise 
